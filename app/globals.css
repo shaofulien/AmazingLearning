@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* Tiptap editor content */
+.tiptap {
+  min-height: 60vh;
+}
+.tiptap p {
+  margin: 0.4em 0;
+}
+.tiptap h1,
+.tiptap h2,
+.tiptap h3 {
+  font-weight: 700;
+  margin: 0.8em 0 0.4em;
+}
+.tiptap h1 {
+  font-size: 1.4em;
+}
+.tiptap h2 {
+  font-size: 1.2em;
+}
+.tiptap ul,
+.tiptap ol {
+  padding-left: 1.4em;
+  margin: 0.4em 0;
+}
+.tiptap ul {
+  list-style: disc;
+}
+.tiptap ol {
+  list-style: decimal;
+}
+.tiptap blockquote {
+  border-left: 3px solid #d4d4d8;
+  padding-left: 0.8em;
+  color: #52525b;
+}
+.tiptap code {
+  background: #f4f4f5;
+  border-radius: 4px;
+  padding: 0.1em 0.3em;
+  font-size: 0.9em;
+}
+
+/* Remote collaborator carets */
+.collaboration-cursor__caret {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  margin-left: -1px;
+  margin-right: -1px;
+  pointer-events: none;
+  position: relative;
+  word-break: normal;
+}
+.collaboration-cursor__label {
+  border-radius: 3px 3px 3px 0;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  left: -1px;
+  line-height: normal;
+  padding: 0.1rem 0.3rem;
+  position: absolute;
+  top: -1.4em;
+  user-select: none;
+  white-space: nowrap;
+}
